@@ -9,7 +9,15 @@ sap.ui.define(
 
     function onRouteChange() {
       newProductModel = new sap.ui.model.json.JSONModel();
-      newProductModel.setData({ ID: 1, Name: "Name", Description: "Some desc", ReleaseDate: null, Rating: 0, Price: "0", DiscontinuedDate: null })
+      newProductModel.setData({
+        ID: 1,
+        Name: "Name",
+        Description: "Some desc",
+        ReleaseDate: null,
+        Rating: 0,
+        Price: "0",
+        DiscontinuedDate: null
+      })
       me.getView().byId("productForm").setModel(newProductModel, "newProduct");
     }
 
